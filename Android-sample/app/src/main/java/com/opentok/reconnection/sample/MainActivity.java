@@ -269,9 +269,9 @@ public class MainActivity extends Activity {
 
                 float batteryUsePct = level / (float)scale;
 
-                //Send info about the battery consume
-                //if the session is reconnected at this moment, we will not send this info (retryAfterReconnection to false),
-                //because the battery consume will not be the same.
+                // Send info about the battery consumption. if the session is reconnecting,
+                // we will not send this info (retryAfterReconnection to false), because the
+                // battery consumption will not be the same.
                 if (mSession != null ) {
                     mSession.sendSignal("signal", String.valueOf(batteryUsePct), false);
                 }
