@@ -14,12 +14,8 @@ Clients connected to sessions that use the Automatic Reconnection feature can do
   by the client when it was temporarily disconnected. (For more information about Signaling, 
   see the [Signaling developer guide](https://tokbox.com/developer/guides/signaling/js/).)
 
-**Important:** To use this feature, you must contact TokBox to enroll in the Automatic Reconnection beta.
-See the main project [README](../README.md) on how to enroll.
-
-**Known issues:** The OpenTok Automatic Reconnection feature does not currently work in Firefox.
-This is due to a known issue with offline mode and peer connections in Firefox 
-(see https://bugzilla.mozilla.org/show_bug.cgi?id=1276559), which Mozilla is working on.
+**Known issues:** The OpenTok Automatic Reconnection feature currently only works in Chrome and
+in apps written with the OpenTok iOS and Android SDKs. (Firefox has a known issue with offline mode and peer connections (see https://bugzilla.mozilla.org/show_bug.cgi?id=1276559), which Mozilla is working on.)
 
 
 ## Trying the sample code
@@ -35,10 +31,6 @@ To configure and try the sample code:
    var sessionId = 'YOUR-SESSION-ID';
    var token = 'YOUR-SESSION-TOKEN';
    ```
-
-   Your API key must be enrolled in the Automatic Reconnection beta. 
-   To enroll an API key for this beta, please see the main project [README](../README.md) 
-   for details.
 
    For the purposes of quickly demonstrating the Automatic Reconnection feature, this sample code
    uses the `config.js` file to set an API key, a session ID and a token to use. However,

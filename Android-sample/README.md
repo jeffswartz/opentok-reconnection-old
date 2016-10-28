@@ -14,9 +14,6 @@ Clients connected to sessions that use the Automatic Reconnection feature can do
   by the client when it was temporarily disconnected. (For more information about Signaling,
   see the [Signaling developer guide](https://tokbox.com/developer/guides/signaling/android/).)
 
-**Important:** To use this feature, you must contact TokBox to enroll in the Automatic Reconnection beta.
-See the main project [README](../README.md) on how to enroll.
-
 ## Client requirements
 
 You must use the most recent version of the OpenTok Android SDK, which is supported on 
@@ -44,10 +41,6 @@ To configure and try the sample code:
    Open the `MainActivity.java` file (in the *com.opentok.reconnection.sample* package) and set
    the `SESSION_ID`, `TOKEN`, and `APIKEY` strings to your own session ID, token, and API key
    respectively.
-
-   Your API key must be enrolled in the Automatic Reconnection beta in order to use this
-   feature. To enroll an API key for this beta, please review the main project [README](../README.md)
-   for details.
 
 3. Connect your Android device to a USB port on your computer. Set up
    [USB debugging](http://developer.android.com/tools/device.html) on your device.
